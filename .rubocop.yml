@@ -1,3 +1,6 @@
+require:
+  - ./rubocop/fork_usage.rb
+
 Style/MultipleComparison:
   Enabled: false
 
@@ -264,3 +267,7 @@ Style/CollectionMethods:
 
 Lint/UnneededDisable:
   Enabled: false
+
+CrossPlatform/ForkUsage:
+  Exclude:
+    - '**/plugins/template/**/*'
